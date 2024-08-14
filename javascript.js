@@ -42,3 +42,9 @@ function botondesencriptar(){
     const textodesencriptado = desencriptar(textarea.value);
     textarea2.value = textodesencriptado;
 }
+function copiartexto(){
+    const texto = document.querySelector('.textarea2');
+    texto.select();
+    document.execCommand('copy');
+    alert('Texto copiado al portapapeles');
+}
